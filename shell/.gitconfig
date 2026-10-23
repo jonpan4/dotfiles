@@ -14,5 +14,5 @@
 	autosquash = true
 [user]
 	name = Jonathan Pan
-	email = jonpan4@gmail.com
+	email = jonathan.pan@vanta.com
 	signingkey = ~/.ssh/id_ed25519.pub
