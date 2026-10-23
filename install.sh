@@ -19,8 +19,6 @@ elif type "apt" > /dev/null; then
 fi
 
 ensure_package stow
-ensure_package jq
-ensure_package tomlq python-yq yq
 
 # --- Antigen ----------------------------------------------------------------
 
