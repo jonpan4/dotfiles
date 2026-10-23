@@ -4,10 +4,6 @@
 	excludesfile = ~/.gitignore_global
 [gpg]
 	format = ssh
-[difftool]
-	cmd = code-insiders --wait --diff $LOCAL $REMOTE
-[mergetool]
-	cmd = code-insiders --wait $MERGED
 [pull]
 	ff = only
 [rebase]
