@@ -43,26 +43,6 @@ done
 
 stow shell --target ~/
 
-# --- Agent harness settings -------------------------------------------------
-
-echo "Merging Claude user settings baseline..."
-merge_json ~/.claude/settings.json ai/claude/settings.json
-echo "...Claude user settings baseline merged!"
-
-echo "Merging Pi user settings baseline..."
-merge_json ~/.pi/agent/settings.json ai/pi/settings.json
-echo "...Pi user settings baseline merged!"
-
-echo "Merging Codex user settings baseline..."
-merge_toml ~/.codex/config.toml ai/codex/config.toml
-echo "...Codex user settings baseline merged!"
-
-# --- Published agent packages -----------------------------------------------
-
-run_if_present "Pi packages" pi update --extensions
-run_if_present "Claude marketplaces" claude plugin marketplace update
-run_if_present "Codex marketplaces" codex plugin marketplace upgrade
-
 # --- Environment-specific credentials / Codespaces --------------------------
 
 if [ "$CODESPACES" = "true" ]; then
