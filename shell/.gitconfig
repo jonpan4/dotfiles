@@ -13,6 +13,6 @@
 [rebase]
 	autosquash = true
 [user]
-	name = Robert Zablit
-	email = rzablit@gmail.com
+	name = Jonathan Pan
+	email = jonpan4@gmail.com
 	signingkey = ~/.ssh/id_ed25519.pub
